@@ -1,0 +1,39 @@
+.container-holder {
+  margin-top: 150px;
+  font-family: Poppins;
+}
+
+.register-left-panel {
+  position: relative;
+  height: 100%;
+  background: rgba(247, 208, 75, 0.8);
+  box-shadow: 0px 0px 20px rgba(23, 50, 97, 0.2);
+  border-radius: 10px;
+}
+
+.margin-80 {
+  margin-top: 80px;
+}
+.signup-container {
+  padding: 0px 40px 40px 40px;
+}
+.bg-img {
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  position: relative;
+  background: url(./../../assets/people.png);
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.register-img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.right-panel {
+  min-height: 900px;
+}

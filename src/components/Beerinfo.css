@@ -1,0 +1,41 @@
+.beer-info {
+  display: flex;
+  margin: 20px 0;
+}
+.beerinfo-img {
+  background-color: rgba(255, 198, 5, 0.4);
+  width: 100%;
+}
+.beerinfo-img h2 {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+  color: #1245ee;
+  text-align: center;
+}
+.beerinfo-img img {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70%;
+  top: 100px;
+}
+.char-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 30px;
+}
+.beer-character h1,
+.food-match h3,
+.find-it h3,
+.brands-place h3 {
+  padding: 10px 0;
+}
+.find-it a {
+  text-decoration: none;
+  color: black;
+}

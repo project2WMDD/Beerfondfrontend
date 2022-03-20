@@ -1,0 +1,7 @@
+.reserve-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.reserve-img img {
+  clip-path: polygon(0 0, 66% 0, 66% 100%, 0% 100%);
+}
