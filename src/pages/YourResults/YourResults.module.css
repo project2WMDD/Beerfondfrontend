@@ -1,0 +1,9 @@
+.btnLink {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.btnLink:hover {
+  cursor: pointer;
+}

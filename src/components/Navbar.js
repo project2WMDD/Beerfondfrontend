@@ -2,7 +2,7 @@ import React from "react";
 import { MenuItems } from "./MenuItem";
 import logo from "../images/logo1.png";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 
 class Navbar extends React.Component {
   render() {
