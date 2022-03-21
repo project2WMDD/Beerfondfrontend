@@ -1,22 +1,18 @@
 import React from "react";
 // import { useState } from 'react'
 import { Link } from "react-router-dom";
-import acres from "../images/33Acres.jpg";
-import NavNew from "./NavNew";
+import NavNew from "../../components/NavNew";
 // import About from './About'
-import Footer from "./Footer";
+import Footer from "../../components/Footer";
 
 const Details = () => {
   //jsx
   return (
     <div>
-      <div>
-        <NavNew />
-      </div>
       <div className="">
         <div>
           <p>33 ACRES BREWING</p>
-          <img src={acres} alt="Acres" />
+          <img src={""} alt="Acres" />
           <Link to="/reservation">
             <button type="submit">Book</button>
           </Link>
