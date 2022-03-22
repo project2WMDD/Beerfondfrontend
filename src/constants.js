@@ -2,6 +2,7 @@
 export const apiAuth = 'auth';
 export const apiBeers = 'beers';
 export const apiBreweries = 'breweries';
+export const apiBookings = 'bookings';
 
 //colors
 export const color1 = '#F7D04B';
