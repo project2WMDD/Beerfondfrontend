@@ -1,11 +1,11 @@
 import React from 'react';
 import { color2, color3 } from '../../constants';
 
-function pageHeading({ children }) {
-  return <h2 style={signupHeading}>{children}</h2>;
+function PageHeading({...props}) {
+  return <h2 style={{...signupHeading, ...props.style}}>{props.children}</h2>;
 }
 
-export default pageHeading;
+export default PageHeading;
 
 const signupHeading = {
   display: 'grid',
@@ -15,5 +15,4 @@ const signupHeading = {
   fontSize: '26px',
   // justifyContent: 'center',
   color: color2,
-  margin: '20px'
 };

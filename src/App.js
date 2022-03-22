@@ -10,7 +10,7 @@ import Navbar from './components/Navbar';
 import LoginForm from './components/LoginForm';
 import Signup from './components/Signup';
 import YourResults from './pages/YourResults/YourResults';
-import Details from './pages/Brewery/Details';
+import Brewery from './pages/Brewery/Brewery';
 import BeerInfo from './pages/BeerInfo/BeerInfo';
 import { useGlobalContext } from './context/globalContext';
 import NavNew from './components/NavNew';
@@ -32,7 +32,7 @@ function App() {
           <Route path='/results' element={<YourResults />} exact />
           <Route path='/beers/:id' element={<BeerInfo />} exact />
           <Route path='/reservation' element={<Reservation />} />
-          <Route path='/details/:id' element={<Details />} exact />
+          <Route path='/details/:id' element={<Brewery />} exact />
           {/* <Reservation />
           </Route> */}
           <Route path='/signup' element={<Signup />} />

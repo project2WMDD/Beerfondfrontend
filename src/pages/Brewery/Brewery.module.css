@@ -1,0 +1,64 @@
+.container {
+  display: grid;
+  /* justify-content: center; */
+  /* text-align: center; */
+  row-gap: 30px;
+}
+
+.upperPart {
+  display: grid;
+  row-gap: 30px;
+}
+
+.btnPrimary {
+  /* align-self: center; */
+  justify-self: center;
+}
+
+.imgContainer {
+  /* min-width: 100%; */
+  /* background-color: red; */
+}
+
+.img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.btnGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: var(--bg-color) ; */
+  column-gap: 100px;
+}
+
+.btn {
+  background-color: var(--bg-color);
+  padding: 10px 15px;
+  border: none;
+}
+
+.btnWhite {
+  background: #fff;
+  border: none;
+}
+
+.lowerPart {
+  display: grid;
+  /* row-gap: 50px; */
+}
+
+.allTabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--bg-color);
+}
+
+.itemStyle {
+  padding: 50px;
+}
+
+.childItem {
+  padding: 10px;
+}
