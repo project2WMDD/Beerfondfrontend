@@ -1,0 +1,74 @@
+.signup-parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 7px;
+}
+.image-people img {
+  background-color: #f7d04b;
+  width: 780px;
+  height: 727px;
+}
+.signup-heading {
+  display: grid;
+  /* background-color: #F7D04B; */
+  font-family: Poppins;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 54px;
+  justify-content: center;
+}
+.sign-child {
+  width: 100%;
+  /* margin: 0 25%; */
+  /* justify-content: center; */
+}
+.form {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+/* .signup-div{
+
+
+} */
+.signup-div label {
+  font-family: Raleway;
+  font-size: bold;
+  line-height: 34px;
+  display: flex;
+  flex-wrap: nowrap;
+
+  /* align-items: flex-start;
+    vertical-align: top; */
+}
+.signup-div input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px, 0px rgba(23, 50, 97, 0.2);
+}
+.btn-signup button {
+  background-color: #1245ee;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+
+.signup-footer {
+  background-color: var(--color-1);
+  margin-top: 20px;
+}
+
+@media (min-width: 614px) {
+  .signup-parent {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .signup-footer {
+    background-color: white;
+  }
+}
