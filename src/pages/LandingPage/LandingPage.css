@@ -1,0 +1,135 @@
+.landing-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  /* background-color: red; */
+}
+
+.hero-intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.hero-img {
+  padding: 40px;
+  display: grid;
+  background-color: #1245ee;
+}
+
+.hero-img-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 20px 0;
+}
+
+.hero-img-container {
+  align-self: center;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 200px;
+  height: 500px;
+  justify-self: center;
+}
+
+.content-part {
+  background-color: var(--bg-color);
+  display: grid;
+  align-items: center;
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.content-part-heading {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.content-part-text {
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.btn-sign {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-sign button {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 30px;
+  background: #1245ee;
+  border-radius: 5px;
+}
+
+.about-us-container {
+  /* background-color: palevioletred; */
+  display: grid;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 0;
+}
+
+
+
+.about-us h4 {
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.about-us p {
+  text-align: center;
+  align-content: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.likes-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  align-content: center;
+}
+
+.likes i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+@media (min-width: 614px) {
+  .about-us-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

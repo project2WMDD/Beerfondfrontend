@@ -1,0 +1,109 @@
+.team-5 {
+  background-color: #f7d04b;
+  padding: 50px;
+}
+
+.our-team {
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+.des-dev {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  /* grid-template-columns: 1fr 1fr; */
+  /* row-gap: 10px; */
+}
+
+.de-cover-heading {
+  text-align: center;
+  padding: 20px;
+}
+
+.desAndDev {
+  /* background-color: red;; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+  /* align-items: stretch; */
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.de-img-intro {
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.de-img {
+  /* width: 250px; */
+  height: 250px;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+}
+
+.de-intro {
+  text-align: center;
+}
+
+.de-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* #gurankit{
+    display: block;
+    justify-items: center;
+} */
+.foot-land {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px;
+}
+
+.footer-web {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+}
+
+.foot-logo p {
+  text-align: start;
+  padding-top: 10px;
+}
+
+.logo-collg {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.social-phnum {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.brands {
+  text-align: end;
+}
+
+.brands i {
+  margin: 20px;
+}
+
+.phnum {
+  text-align: end;
+  margin-right: 20px;
+}
