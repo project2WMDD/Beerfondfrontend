@@ -1,6 +1,9 @@
-.container-holder {
-  margin-top: 150px;
+.preferences-container {
   font-family: Poppins;
+  grid-template-columns: 1fr;
+  display: grid;
+  justify-items: center;
+  gap: 50px;
 }
 
 .register-left-panel {
@@ -23,7 +26,6 @@
   -moz-box-pack: center;
   justify-content: center;
   position: relative;
-  background: url(./../../assets/people.png);
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -36,4 +38,30 @@
 }
 .right-panel {
   min-height: 900px;
+}
+
+.done-btn {
+  margin: 20px 0;
+  background-color: var(--color-2);
+  color: white;
+  padding: 10px 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pref-footer {
+  background-color: var(--color-1);
+}
+
+@media (min-width: 614px) {
+  .preferences-container {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+
+  .pref-footer {
+    background-color: white;
+  }
 }

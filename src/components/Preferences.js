@@ -8,7 +8,7 @@ import { Form, Button } from 'react-bootstrap';
 import Footer from './Footer';
 import { color2 } from '../constants';
 import { useNavigate } from 'react-router-dom';
-// import './prefrences.css'
+import './Preferences.css';
 
 const initialState = {
   flavour: '',
@@ -18,7 +18,7 @@ const initialState = {
 function Preferences() {
   let [values, setValues] = useState(initialState);
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const onChange = (e) => {
     console.log(e.target.value);
@@ -29,19 +29,21 @@ function Preferences() {
     e.preventDefault();
     console.log('submit');
     console.log(values);
-    navigate(`/results?alcoholPercent=${values.alcoholPercent}`)
+    navigate(`/results?alcoholPercent=${values.alcoholPercent}`);
   };
 
   return (
     <>
-      <div
-        style={{ display: 'grid', gap: '50px', gridTemplateColumns: '1fr 1fr' }}
-      >
-        <div style={{ height: '100%' }}>
+      <div class='preferences-container'>
+        <div>
           <PictureSide src={logo2} />
         </div>
+
         <div>
-          <PageHeading>We want to know your preferences</PageHeading>
+          <PageHeading style={{ margin: '20px' }}>
+            We want to know your preferences
+          </PageHeading>
+
           <Form onSubmit={onSubmit}>
             <Form.Group>
               <Form.Label style={labelStyle}>
@@ -112,27 +114,22 @@ function Preferences() {
             )}
 
             <div className='text-center'>
-              <Button
-                style={{
-                  marginTop: '20px',
-                  backgroundColor: color2,
-                  color: 'white',
-                  padding: '10px 20px',
-                }}
-                type='submit'
-              >
+              <button className='done-btn' type='submit'>
                 Done
-              </Button>
+              </button>
             </div>
           </Form>
         </div>
       </div>
-      <Footer />
+
+      <div className='pref-footer'>
+        <Footer />
+      </div>
     </>
   );
 }
 
 export default Preferences;
 
-const labelStyle = { fontWeight: 'bold' };
-const formCheckStyle = { display: 'flex', gap: '10px', marginTop: '10px' };
+const labelStyle = { fontWeight: 'bold', marginLeft: '20px' };
+const formCheckStyle = { display: 'flex', gap: '10px', margin: '20px 20px' };
