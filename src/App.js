@@ -8,7 +8,7 @@ import LandingPage from './pages/LandingPage/LandingPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LoginForm from './components/LoginForm';
-import Signup from './components/Signup';
+import Signup from './pages/Signup/Signup';
 import YourResults from './pages/YourResults/YourResults';
 import Brewery from './pages/Brewery/Brewery';
 import BeerInfo from './pages/BeerInfo/BeerInfo';
