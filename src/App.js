@@ -4,7 +4,7 @@ import Reservation from './components/Reservation';
 // import {useState} from 'react';
 // import Footer from './components/Footer';
 import Preferences from './components/Preferences';
-import LandingPage from './components/LandingPage';
+import LandingPage from './pages/LandingPage/LandingPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LoginForm from './components/LoginForm';
