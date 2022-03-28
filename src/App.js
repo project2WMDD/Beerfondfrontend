@@ -7,7 +7,7 @@ import Preferences from './components/Preferences';
 import LandingPage from './pages/LandingPage/LandingPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import LoginForm from './components/LoginForm';
+import LoginForm from './pages/LoginForm/LoginForm';
 import Signup from './pages/Signup/Signup';
 import YourResults from './pages/YourResults/YourResults';
 import Brewery from './pages/Brewery/Brewery';
