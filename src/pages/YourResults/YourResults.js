@@ -56,7 +56,7 @@ function BeerOverview({ beer }) {
       </div>
       <div style={textContainer}>
         <h4 style={beerTitle}>{beer.beer_name}</h4>
-        <p>{beer.beer_desc}</p>
+        <p>{beer.beer_descr}</p>
         <p>
           <button
             className={styles.btnLink}

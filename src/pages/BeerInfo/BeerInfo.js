@@ -17,6 +17,7 @@ const initialState = {
   beer_name: '',
   beer_descr: '',
   beer_pic: '',
+  suggested_foods: []
 };
 
 function BeerInfo() {
@@ -55,6 +56,7 @@ function BeerInfo() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
+  console.log(beer)
   return (
     <div>
       {/* <NavNew /> */}
@@ -75,7 +77,7 @@ function BeerInfo() {
           <div className='food-match'>
             <h3>Food Match</h3>
             <ul>
-              {beer.suggestion_food.map((food, i) => (
+              {beer.suggested_foods.map((food, i) => (
                 <li key={i}>{food}</li>
               ))}
             </ul>
