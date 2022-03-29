@@ -8,7 +8,6 @@ import {
   LOGIN_USER,
   LOGIN_USER_ERROR,
   LOGIN_USER_SUCCESS,
-  LOGOUT_USER,
 } from './actions';
 import { apiAuth } from '../constants';
 
@@ -31,7 +30,7 @@ const GlobalProvider = ({ children }) => {
     localStorage.setItem('token', token);
   };
 
-  const removeUserInLocalStorage = () => {
+  const removeUserInLocalStorage = ({ user, token }) => {
     localStorage.removeItem('user');
     localStorage.removeItem('token');
   };
@@ -74,15 +73,8 @@ const GlobalProvider = ({ children }) => {
     console.log(userParams);
   };
 
-  const logoutUser = () => {
-    dispatch({ type: LOGOUT_USER, payload: { user: null, token: null } });
-    removeUserInLocalStorage();
-  };
-
   return (
-    <GlobalContext.Provider
-      value={{ ...state, createUser, loginUser, logoutUser }}
-    >
+    <GlobalContext.Provider value={{ ...state, createUser, loginUser }}>
       {children}
     </GlobalContext.Provider>
   );

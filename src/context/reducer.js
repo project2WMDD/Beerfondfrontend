@@ -5,7 +5,6 @@ import {
   LOGIN_USER,
   LOGIN_USER_ERROR,
   LOGIN_USER_SUCCESS,
-  LOGOUT_USER,
 } from './actions';
 
 const reducer = (state, action) => {
@@ -37,10 +36,6 @@ const reducer = (state, action) => {
   }
   if (action.type === LOGIN_USER_ERROR) {
     return { ...state, isLoading: false, errorMsg: action.payload };
-  }
-  if (action.type === LOGOUT_USER) {
-    console.log(action, state)
-    return { ...state, token: action.payload.token, user: action.payload.user };
   }
 };
 

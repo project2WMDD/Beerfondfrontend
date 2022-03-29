@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 // import beer from '../images/pale-glass.png';
-import { apiBeers, apiBreweries, color1, color2, color3 } from '../../constants';
+import {
+  apiBeers,
+  apiBreweries,
+  color1,
+  color2,
+  color3,
+} from '../../constants';
 import Footer from '../../components/Footer';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '../../hooks/useQuery';
@@ -20,7 +26,6 @@ function BeerInfo() {
   const { id } = useParams();
 
   useEffect(() => {
-    
     let fetchBreweries = async () => {
       try {
         let result = await axios.get(
@@ -70,11 +75,9 @@ function BeerInfo() {
           <div className='food-match'>
             <h3>Food Match</h3>
             <ul>
-              <li>Salads</li>
-              <li>grilled Meats</li>
-              <li>Medium cheese</li>
-              <li>Desserts</li>
-              <li>Seafood</li>
+              {beer.suggestion_food.map((food, i) => (
+                <li key={i}>{food}</li>
+              ))}
             </ul>
           </div>
           <div className='find-it'>
@@ -83,8 +86,8 @@ function BeerInfo() {
               {breweries.length > 0 &&
                 breweries.map((brewery) => {
                   return (
-                    <Link to={`/details/${brewery._id}`}  key={brewery._id}>
-                      <li>33 Acres</li>
+                    <Link to={`/details/${brewery._id}`} key={brewery._id}>
+                      <li>{brewery.brewer_name}</li>
                     </Link>
                   );
                 })}

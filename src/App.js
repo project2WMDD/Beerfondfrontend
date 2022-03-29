@@ -14,7 +14,6 @@ import Brewery from './pages/Brewery/Brewery';
 import BeerInfo from './pages/BeerInfo/BeerInfo';
 import { useGlobalContext } from './context/globalContext';
 import NavNew from './components/NavNew';
-import Settings from './pages/Settings/Settings';
 // import axios from "axios";
 
 function App() {
@@ -40,7 +39,6 @@ function App() {
           {/* <Signup />
           </Route> */}
           <Route path='/login' element={<LoginForm />} />
-          <Route path='/settings' element={<Settings />} />
           {/* <LoginForm />
           </Route> */}
         </Routes>
