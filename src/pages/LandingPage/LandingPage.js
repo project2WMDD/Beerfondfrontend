@@ -1,18 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import drink from '../../images/pale-glass.png';
 import Footer from '../../components/Footer'
 import OurTeam from '../../components/OurTeam';
+import { useGlobalContext } from '../../context/globalContext';
 //import Signup from './Signup'
-//import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import './LandingPage.css';
 import { Link } from 'react-router-dom';
 // import Navbar from "./Navbar";
 
 function LandingPage() {
-  // let navigate = useNavigate();
+  let navigate = useNavigate();
   // function handClick(){
   //     navigate('/Signup')
   // }
+  let { user } = useGlobalContext();
+  useEffect(() => {
+    if (user) {
+      navigate('/preferences');
+    }
+  }, [user, navigate]);
+
   return (
     <div>
       {/* <Navbar /> */}
