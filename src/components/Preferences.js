@@ -1,11 +1,10 @@
 // import './LoginForm.css'
 // import peopleImg from '../images/people.png';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import PageHeading from '../globalComponents/PageHeading/PageHeading';
 import PictureSide from '../globalComponents/PictureSide/PictureSide';
 import logo2 from '../images/logo2.png';
 import { Form, Button } from 'react-bootstrap';
-import {useGlobalContext} from '../context/globalContext'
 import Footer from './Footer';
 import { color2 } from '../constants';
 import { useNavigate } from 'react-router-dom';
@@ -16,17 +15,10 @@ const initialState = {
   favFood: '',
   alcoholPercent: '',
 };
-
 function Preferences() {
   let [values, setValues] = useState(initialState);
-  const navigate = useNavigate();
-  let {user} = useGlobalContext();
 
-  useEffect(() => {
-    if (!user) {
-      navigate('/');
-    }
-  }, [user, navigate]);
+  const navigate = useNavigate();
 
   const onChange = (e) => {
     console.log(e.target.value);
@@ -42,7 +34,7 @@ function Preferences() {
 
   return (
     <>
-      <div className='preferences-container'>
+      <div class='preferences-container'>
         <div>
           <PictureSide src={logo2} />
         </div>
